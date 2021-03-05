@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊猫问卷调查</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./pandaIcon.png" />
+    <link rel="bookmark" href="./pandaIcon.png" />
+</head>
+<body>
+    <!--这是熊猫问卷调查-->
+    <h1>欢迎来到熊猫调查卷</h1>
+   <form action="" method="GET">
+       
+     <label for="myname">姓名:</label>
+     <input
+     id="myname"
+     type="text"
+     name="InputName"
+     required
+     placeholder="请输入名字"
+     />
+     <br />
+
+     <label for="gender">性别</label>
+     <select name="gender" id="gender" required>
+         <option></option>
+         <option value="male">男性</option>
+         <option value="female">女性</option>
+         <option value="other">其他</option>
+     </select>
+     <br />
+     <label for="tele">电话:</label>
+   <input id="tele" type="text"p name="telefon" required placeholder="01********" />
+   <br />
+   <label for="email">信箱:</label>
+   <input id="email" type="email" name="email" required placeholder="Example@gmail.com" />
+   <br />
+   <label for="age">年龄:</label>
+   <input
+   id="age"
+   type="number"
+   name="age"
+   value="18"
+   min="0"
+   max="150"
+   required
+   />
+   <br />
+   <label for="date of birth;">出生日期</label>
+   <input id="date" type="date" required>
+   <br />
+   <label for="area">地区</label>
+   <input list="areaList" type="text" name="area" id="area" required placeholder="点击两下有列表显示" />
+   <datalist id="areaList">
+       <option value="霹雳州">霹雳</option>
+       <option value="吉兰丹州">吉兰丹</option>
+       <option value="马六甲">马六甲</option>
+       <option value="森美兰州">森美兰</option>
+       <option value="彭亨州">彭亨</option>
+       <option value="槟城州">槟城</option>
+       <option value="玻璃市">玻璃市</option>
+       <option value="雪兰莪州">雪兰莪</option>
+       <option value="登嘉楼州">登嘉楼</option>
+       <option value="沙巴州">沙巴</option>
+       <option value="砂拉越州">砂拉越</option>
+       <option value="吉隆坡">吉隆坡</option>
+   </datalist>
+   <br />
+   <hr />
+   <label for="">网站反馈</label>
+   <br />
+   <textarea name="suggestion"
+   id="suggestion"
+   cols="30"
+   rows="10"
+   placeholder="可点击评论反馈！！！"
+   ></textarea>
+   <br />
+   <input
+   type="checkbox"
+   id="checkbox"
+   name="news"
+   value="newspaper"
+   checked
+   />
+
+   <label for="checkbox">订阅熊猫电子报</label>
+   <br />
+    <button type="submit">提交表单</button>
+    </form>
+    <button>
+        <h2 class="back"><a href="./index.html">Back</a></h2>
+    </button>
+</body>
+</html>

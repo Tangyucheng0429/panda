@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+/*
+1. nested CSS
+2. variables
+3. self $
+4. import
+(1)分类
+(2)重复利用
+5. mixin
+*/
+$themeColor: green;
+
+@import "./header";
+
+@mixin flexbox($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+div.link {
+  @include flexbox(row);
+}
+.pic {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+}
